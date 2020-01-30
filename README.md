@@ -4,7 +4,9 @@ This tap contains the latest formula for the following apps:
 - [cig](https://github.com/gesquive/cig) - 
 formats PEM certificates in a nice human readable (mkcert.org) format
 - [rip](https://github.com/gesquive/rip) - 
-sends a text file line by line to a remote host/port.
+sends a text file line by line to a remote host/port
+- [gop](https://github.com/gesquive/gop) - 
+package your multi-os/arch executables
 
 
 # Installing 
@@ -17,6 +19,11 @@ $ brew tap gesquive/tap
 After the tap is installed, you can install apps like any other brew formula:
 ```shell
 $ brew install cig
+```
+
+You can search for the formulas in the tap with
+```shell
+$ brew search gesquive/tap
 ```
 
 # Removing
