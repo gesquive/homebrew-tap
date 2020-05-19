@@ -1,12 +1,14 @@
 # Homebrew Tap
 
 This tap contains the latest formula for the following apps:
-- [cif](https://github.com/gesquive/cif:) - 
+- [cif](https://github.com/gesquive/cif) - 
 formats PEM certificates in a nice human readable (mkcert.org) format
 - [rip](https://github.com/gesquive/rip) - 
 sends a text file line by line to a remote host/port
 - [gop](https://github.com/gesquive/gop) - 
 package your multi-os/arch executables
+- [krypt](https://github.com/gesquive/krypt) -
+encrypt or decrypt files using different ciphers
 
 
 # Installing 
