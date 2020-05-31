@@ -2,24 +2,24 @@
 class Krypt < Formula
   desc "A command line file encrypter and decrypter"
   homepage "https://github.com/gesquive/krypt"
-  version "1.0.0"
+  version "1.0.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gesquive/krypt/releases/download/v1.0.0/krypt_v1.0.0_darwin_x86_64.tar.gz"
-    sha256 "9b6ec6d56a40354492c2fbe230a0b8aa84d2ce7fa05be07c8cfe46657ecaa770"
+    url "https://github.com/gesquive/krypt/releases/download/v1.0.1/krypt_v1.0.1_darwin_x86_64.tar.gz"
+    sha256 "cf5387e95b1178bda4f8c81c96f72181b174716d5c134773b1ae2fdb3dae928c"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gesquive/krypt/releases/download/v1.0.0/krypt_v1.0.0_linux_x86_64.tar.gz"
-      sha256 "0fe54b7fb8d9867677d7d0811f308006a17e2bce0dd2eb813f13c4e542cc93ef"
+      url "https://github.com/gesquive/krypt/releases/download/v1.0.1/krypt_v1.0.1_linux_x86_64.tar.gz"
+      sha256 "2ec9be82a10fe33118c7d22a82a86c45d82ffb45cc3bba69d06d3ec8644569e6"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gesquive/krypt/releases/download/v1.0.0/krypt_v1.0.0_linux_arm64.tar.gz"
-        sha256 "eff0209211677ede3847f99eadea9ab1369f92e9dbff294ff17c95cacd10da27"
+        url "https://github.com/gesquive/krypt/releases/download/v1.0.1/krypt_v1.0.1_linux_arm64.tar.gz"
+        sha256 "a627ba3a210c46962b7a4ef86ccbc3e2916a4d4176ed30d4b9775b2102af4a19"
       else
-        url "https://github.com/gesquive/krypt/releases/download/v1.0.0/krypt_v1.0.0_linux_armv6.tar.gz"
-        sha256 "911fe9a39c0d7b91dfd7de15ea394f1b4b6e178fb11c82387a762ca438a32a4c"
+        url "https://github.com/gesquive/krypt/releases/download/v1.0.1/krypt_v1.0.1_linux_armv6.tar.gz"
+        sha256 "cc143a17077566ae3d791a0ba6521cd9ab3b986a5288d43a7d380cefe9a61ed6"
       end
     end
   end
