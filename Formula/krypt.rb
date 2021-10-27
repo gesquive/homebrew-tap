@@ -3,7 +3,6 @@ class Krypt < Formula
   desc "A command line file encrypter and decrypter"
   homepage "https://github.com/gesquive/krypt"
   version "1.1.0"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/gesquive/krypt/releases/download/v1.1.0/krypt_v1.1.0_darwin_x86_64.tar.gz"

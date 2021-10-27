@@ -3,7 +3,6 @@ class Cif < Formula
   desc "Generate certificate summary information for PEM certificates and output (in mkcert.org format)"
   homepage "https://github.com/gesquive/cif"
   version "1.1.0"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/gesquive/cif/releases/download/v1.1.0/cif_v1.1.0_darwin_x86_64.tar.gz"

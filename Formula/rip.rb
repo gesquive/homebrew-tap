@@ -3,7 +3,6 @@ class Rip < Formula
   desc "Sends a text file line by line to a remote host/port"
   homepage "https://github.com/gesquive/rip"
   version "0.2.2"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/gesquive/rip/releases/download/v0.2.2/rip_v0.2.2_darwin_x86_64.tar.gz"

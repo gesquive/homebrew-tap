@@ -3,7 +3,6 @@ class Gop < Formula
   desc "Package your multi-os/arch executables"
   homepage "https://github.com/gesquive/gop"
   version "0.2.5"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/gesquive/gop/releases/download/v0.2.5/gop_v0.2.5_darwin_x86_64.tar.gz"
