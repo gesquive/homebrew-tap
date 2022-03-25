@@ -9,6 +9,8 @@ sends a text file line by line to a remote host/port
 package your multi-os/arch executables
 - [krypt](https://github.com/gesquive/krypt) -
 encrypt or decrypt files using different ciphers
+- [git-user](https://github.com/gesquive/git-user) - 
+git plugin to save multiple user profiles and set them as repo defaults
 - [paperless-uploader](https://github.com/gesquive/paperless-uploader) - 
 watches a directory for files and uploads them to a paperless-ng instance
 
