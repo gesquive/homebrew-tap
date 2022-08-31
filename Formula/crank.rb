@@ -5,50 +5,65 @@
 class Crank < Formula
   desc "generate random passwords"
   homepage "https://github.com/gesquive/crank"
-  version "1.0.1"
+  version "1.0.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/gesquive/crank/releases/download/v1.0.1/crank_v1.0.1_darwin_arm64.tar.gz"
-      sha256 "39b167c4d0353b556588097e47ebacb892c52db648e4f76acafa212863eef00d"
+      url "https://github.com/gesquive/crank/releases/download/v1.0.2/crank_v1.0.2_darwin_arm64.tar.gz"
+      sha256 "a55f1b7265a2a0bfcf8a88e673ca0354d6f1e844eca0d15bd63b9db236cb46bf"
 
       def install
         bin.install "crank"
+        bash_completion.install "completions/crank.bash" => "crank"
+        fish_completion.install "completions/crank.fish"
+        zsh_completion.install "completions/crank.zsh" => "_crank"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/gesquive/crank/releases/download/v1.0.1/crank_v1.0.1_darwin_x86_64.tar.gz"
-      sha256 "3e0c97deb03ee361824e3bc12f3d3691f88af44e8f8f0913cea6435792019571"
+      url "https://github.com/gesquive/crank/releases/download/v1.0.2/crank_v1.0.2_darwin_x86_64.tar.gz"
+      sha256 "33d6bc29e5e7a0b1e48e66cd5c1b67b461b8ad2806695a07f35db8d9870223ac"
 
       def install
         bin.install "crank"
+        bash_completion.install "completions/crank.bash" => "crank"
+        fish_completion.install "completions/crank.fish"
+        zsh_completion.install "completions/crank.zsh" => "_crank"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/gesquive/crank/releases/download/v1.0.1/crank_v1.0.1_linux_armv6.tar.gz"
-      sha256 "2c3a108c5bbc372b9c6961e1d964cb45b063efebc483f0eec2487b2bcea3fb31"
+      url "https://github.com/gesquive/crank/releases/download/v1.0.2/crank_v1.0.2_linux_armv6.tar.gz"
+      sha256 "62e7a1b65c05f26ace83f687a1e69919b74d56fa58603ebf94984b0900d88531"
 
       def install
         bin.install "crank"
+        bash_completion.install "completions/crank.bash" => "crank"
+        fish_completion.install "completions/crank.fish"
+        zsh_completion.install "completions/crank.zsh" => "_crank"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gesquive/crank/releases/download/v1.0.1/crank_v1.0.1_linux_arm64.tar.gz"
-      sha256 "d0e6a75b2861feba81c3e94c434cce5fe6dd2b1877dd98ddc96b33cba069ab53"
+      url "https://github.com/gesquive/crank/releases/download/v1.0.2/crank_v1.0.2_linux_arm64.tar.gz"
+      sha256 "6d81a904a28c51afa99d49276a801f7854f24e1d7907646be136905974326aa7"
 
       def install
         bin.install "crank"
+        bash_completion.install "completions/crank.bash" => "crank"
+        fish_completion.install "completions/crank.fish"
+        zsh_completion.install "completions/crank.zsh" => "_crank"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/gesquive/crank/releases/download/v1.0.1/crank_v1.0.1_linux_x86_64.tar.gz"
-      sha256 "48dd42a0281627546125735707c396cafa142df55d9415981b01321c5ed93831"
+      url "https://github.com/gesquive/crank/releases/download/v1.0.2/crank_v1.0.2_linux_x86_64.tar.gz"
+      sha256 "4523bdb15bae4ad3267294d98c767260cee6b0e53769ebe1259d49f1d768e587"
 
       def install
         bin.install "crank"
+        bash_completion.install "completions/crank.bash" => "crank"
+        fish_completion.install "completions/crank.fish"
+        zsh_completion.install "completions/crank.zsh" => "_crank"
       end
     end
   end
